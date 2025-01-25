@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const ProductCard = ({ gadget }) => {
 
@@ -7,9 +8,8 @@ const ProductCard = ({ gadget }) => {
         <div className="card bg-base-200 max-w-[320px] shadow-sm">
             <figure className="px-5 pt-5">
                 <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
-                    className="rounded-xl" />
+                    src={product_image}
+                    className="rounded-x w-64 h-44 " />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{product_title}</h2>
@@ -21,6 +21,14 @@ const ProductCard = ({ gadget }) => {
             </div>
         </div>
     );
+};
+ProductCard.propTypes = {
+    gadget: PropTypes.shape({
+        product_id: PropTypes.string.isRequired,
+        product_title: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+        product_image: PropTypes.string
+    }).isRequired
 };
 
 export default ProductCard;

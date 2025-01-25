@@ -14,7 +14,7 @@ const GadgetList = () => {
     }, [])
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+        <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
             {
                 gadgets.map( gadget => <ProductCard 
                 key={gadget.product_id}

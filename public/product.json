@@ -3,7 +3,7 @@
       "product_id": "LAP001",
       "product_title": "Acer Aspire 5",
       "price": 599,
-      "product_image": "https://example.com/images/acer-aspire5.jpg",
+      "product_image": "https://i.ibb.co.com/J5hkq3w/1.jpg",
       "category": "Laptop",
       "description": "A versatile laptop with powerful performance for daily tasks.",
       "specification": [
@@ -20,7 +20,7 @@
       "product_id": "LAP002",
       "product_title": "HP Pavilion x360",
       "price": 749,
-      "product_image": "https://example.com/images/hp-pavilion.jpg",
+      "product_image": "https://i.ibb.co.com/1TBJdDy/2.jpg",
       "category": "Laptop",
       "description": "A convertible laptop for work and play.",
       "specification": [
@@ -37,7 +37,7 @@
       "product_id": "LAP003",
       "product_title": "Dell Inspiron 15",
       "price": 799,
-      "product_image": "https://example.com/images/dell-inspiron.jpg",
+      "product_image": "https://i.ibb.co.com/Ky199pB/3.jpg",
       "category": "Laptop",
       "description": "A powerful and reliable laptop for professionals.",
       "specification": [
@@ -54,7 +54,7 @@
       "product_id": "LAP004",
       "product_title": "MacBook Air M1",
       "price": 999,
-      "product_image": "https://example.com/images/macbook-air-m1.jpg",
+      "product_image": "https://i.ibb.co.com/pzFLSJR/4.jpg",
       "category": "Laptop",
       "description": "Apple's lightweight and ultra-powerful laptop.",
       "specification": [
@@ -71,7 +71,7 @@
       "product_id": "LAP005",
       "product_title": "Asus ROG Zephyrus G14",
       "price": 1499,
-      "product_image": "https://example.com/images/asus-rog.jpg",
+      "product_image": "https://i.ibb.co.com/HGP6TXN/5.jpg",
       "category": "Laptop",
       "description": "A gaming powerhouse with incredible performance.",
       "specification": [
@@ -83,12 +83,12 @@
       ],
       "available": true,
       "rating": 4.7
-    },
+    },    
     {
       "product_id": "LAP006",
       "product_title": "Lenovo ThinkPad X1 Carbon",
       "price": 1799,
-      "product_image": "https://example.com/images/lenovo-thinkpad.jpg",
+      "product_image": "https://i.ibb.co.com/jJLVYZh/6.jpg",
       "category": "Laptop",
       "description": "A premium business laptop with robust features.",
       "specification": [
@@ -105,7 +105,7 @@
       "product_id": "PH001",
       "product_title": "iPhone 14 Pro",
       "price": 1099,
-      "product_image": "https://example.com/images/iphone14-pro.jpg",
+      "product_image": "https://i.ibb.co.com/3vPncFQ/7.jpg",
       "category": "iPhone",
       "description": "Apple's flagship phone with pro-grade features.",
       "specification": [
@@ -121,7 +121,7 @@
       "product_id": "PH002",
       "product_title": "Samsung Galaxy S23",
       "price": 899,
-      "product_image": "https://example.com/images/samsung-galaxy-s23.jpg",
+      "product_image": "https://i.ibb.co.com/kgHKNnj/8.jpg",
       "category": "Phone",
       "description": "Samsung's latest flagship with cutting-edge technology.",
       "specification": [
@@ -138,7 +138,7 @@
       "product_id": "ACC001",
       "product_title": "Logitech MX Master 3",
       "price": 99,
-      "product_image": "https://example.com/images/logitech-mx-master3.jpg",
+      "product_image": "https://i.ibb.co.com/sw4BtBL/9.jpg",
       "category": "Accessories",
       "description": "An advanced ergonomic wireless mouse.",
       "specification": [
@@ -154,7 +154,7 @@
       "product_id": "ACC002",
       "product_title": "Sony WH-1000XM5",
       "price": 399,
-      "product_image": "https://example.com/images/sony-wh-1000xm5.jpg",
+      "product_image": "https://i.ibb.co.com/g3wrKkp/10.jpg",
       "category": "Accessories",
       "description": "Premium noise-cancelling wireless headphones.",
       "specification": [
@@ -170,7 +170,7 @@
       "product_id": "SW001",
       "product_title": "Apple Watch Series 8",
       "price": 499,
-      "product_image": "https://example.com/images/apple-watch-series8.jpg",
+      "product_image": "https://i.ibb.co.com/T2HczZv/11.jpg",
       "category": "Smart Watches",
       "description": "The ultimate fitness and health companion.",
       "specification": [
@@ -186,7 +186,7 @@
       "product_id": "SW002",
       "product_title": "Samsung Galaxy Watch 5",
       "price": 329,
-      "product_image": "https://example.com/images/galaxy-watch5.jpg",
+      "product_image": "https://i.ibb.co.com/GMfVmwc/12.jpg",
       "category": "Smart Watches",
       "description": "A smartwatch that tracks your health and fitness goals.",
       "specification": [
@@ -199,4 +199,12 @@
       "rating": 4.6
     }
   ]
+
+ 
+
+
+
+
+
+
   
