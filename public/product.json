@@ -1,0 +1,202 @@
+[
+    {
+      "product_id": "LAP001",
+      "product_title": "Acer Aspire 5",
+      "price": 599,
+      "product_image": "https://example.com/images/acer-aspire5.jpg",
+      "category": "Laptop",
+      "description": "A versatile laptop with powerful performance for daily tasks.",
+      "specification": [
+        "Intel Core i5",
+        "8GB RAM",
+        "512GB SSD",
+        "15.6-inch Full HD Display",
+        "Windows 11"
+      ],
+      "available": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": "LAP002",
+      "product_title": "HP Pavilion x360",
+      "price": 749,
+      "product_image": "https://example.com/images/hp-pavilion.jpg",
+      "category": "Laptop",
+      "description": "A convertible laptop for work and play.",
+      "specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "1TB SSD",
+        "14-inch Touchscreen",
+        "Windows 11"
+      ],
+      "available": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "LAP003",
+      "product_title": "Dell Inspiron 15",
+      "price": 799,
+      "product_image": "https://example.com/images/dell-inspiron.jpg",
+      "category": "Laptop",
+      "description": "A powerful and reliable laptop for professionals.",
+      "specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "15.6-inch Full HD Display",
+        "Windows 11 Pro"
+      ],
+      "available": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": "LAP004",
+      "product_title": "MacBook Air M1",
+      "price": 999,
+      "product_image": "https://example.com/images/macbook-air-m1.jpg",
+      "category": "Laptop",
+      "description": "Apple's lightweight and ultra-powerful laptop.",
+      "specification": [
+        "Apple M1 Chip",
+        "8GB RAM",
+        "256GB SSD",
+        "13.3-inch Retina Display",
+        "macOS"
+      ],
+      "available": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "LAP005",
+      "product_title": "Asus ROG Zephyrus G14",
+      "price": 1499,
+      "product_image": "https://example.com/images/asus-rog.jpg",
+      "category": "Laptop",
+      "description": "A gaming powerhouse with incredible performance.",
+      "specification": [
+        "AMD Ryzen 9",
+        "16GB RAM",
+        "1TB SSD",
+        "14-inch QHD Display",
+        "NVIDIA GeForce RTX 3060"
+      ],
+      "available": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "LAP006",
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "price": 1799,
+      "product_image": "https://example.com/images/lenovo-thinkpad.jpg",
+      "category": "Laptop",
+      "description": "A premium business laptop with robust features.",
+      "specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "14-inch Full HD Display",
+        "Windows 11 Pro"
+      ],
+      "available": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "PH001",
+      "product_title": "iPhone 14 Pro",
+      "price": 1099,
+      "product_image": "https://example.com/images/iphone14-pro.jpg",
+      "category": "iPhone",
+      "description": "Apple's flagship phone with pro-grade features.",
+      "specification": [
+        "A16 Bionic Chip",
+        "6.1-inch Super Retina XDR Display",
+        "48MP Triple-Camera System",
+        "iOS 16"
+      ],
+      "available": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "PH002",
+      "product_title": "Samsung Galaxy S23",
+      "price": 899,
+      "product_image": "https://example.com/images/samsung-galaxy-s23.jpg",
+      "category": "Phone",
+      "description": "Samsung's latest flagship with cutting-edge technology.",
+      "specification": [
+        "Snapdragon 8 Gen 2",
+        "8GB RAM",
+        "256GB Storage",
+        "6.1-inch Dynamic AMOLED 2X",
+        "Android 13"
+      ],
+      "available": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "ACC001",
+      "product_title": "Logitech MX Master 3",
+      "price": 99,
+      "product_image": "https://example.com/images/logitech-mx-master3.jpg",
+      "category": "Accessories",
+      "description": "An advanced ergonomic wireless mouse.",
+      "specification": [
+        "Ergonomic Design",
+        "USB-C Rechargeable",
+        "Multiple Device Pairing",
+        "Precision Tracking"
+      ],
+      "available": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "ACC002",
+      "product_title": "Sony WH-1000XM5",
+      "price": 399,
+      "product_image": "https://example.com/images/sony-wh-1000xm5.jpg",
+      "category": "Accessories",
+      "description": "Premium noise-cancelling wireless headphones.",
+      "specification": [
+        "Industry-Leading Noise Cancellation",
+        "30 Hours Battery Life",
+        "Quick Charge Support",
+        "Bluetooth 5.2"
+      ],
+      "available": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "SW001",
+      "product_title": "Apple Watch Series 8",
+      "price": 499,
+      "product_image": "https://example.com/images/apple-watch-series8.jpg",
+      "category": "Smart Watches",
+      "description": "The ultimate fitness and health companion.",
+      "specification": [
+        "Always-On Retina Display",
+        "ECG App",
+        "Crash Detection",
+        "Blood Oxygen Monitoring"
+      ],
+      "available": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "SW002",
+      "product_title": "Samsung Galaxy Watch 5",
+      "price": 329,
+      "product_image": "https://example.com/images/galaxy-watch5.jpg",
+      "category": "Smart Watches",
+      "description": "A smartwatch that tracks your health and fitness goals.",
+      "specification": [
+        "AMOLED Display",
+        "Body Composition Tracking",
+        "Sleep Coaching",
+        "GPS Built-In"
+      ],
+      "available": true,
+      "rating": 4.6
+    }
+  ]
+  
