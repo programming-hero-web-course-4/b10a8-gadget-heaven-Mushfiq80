@@ -1,21 +1,26 @@
+import { useState } from "react";
+import { useEffect } from "react";
+import ProductCard from "../../ProductCard/ProductCard";
 
 
 const GadgetList = () => {
+
+    const [gadgets, setGadgets] = useState([]);
+
+    useEffect( () => {
+        fetch('./product.json')
+            .then(response => response.json())
+            .then(data => setGadgets(data))
+    }, [])
+
     return (
-        <div className="card bg-base-200 max-w-[320px] shadow-sm">
-            <figure className="px-5 pt-5">
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
-                    className="rounded-xl" />
-            </figure>
-            <div className="card-body">
-                <h2 className="card-title">Card Title</h2>
-                <p>Price:  </p>
-                <div className="card-actions">
-                    <button className="btn btn-outline btn-primary rounded-3xl">View Details</button>
-                </div>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+            {
+                gadgets.map( gadget => <ProductCard 
+                key={gadget.product_id}
+                gadget={gadget}
+                ></ProductCard>)
+            }
         </div>
     );
 };

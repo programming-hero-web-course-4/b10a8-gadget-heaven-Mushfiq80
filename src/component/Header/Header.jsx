@@ -1,5 +1,12 @@
 
 const Header = () => {
+
+    const links = <>
+        <li><a>Home</a></li>
+        <li><a>Statistics</a></li>
+        <li><a>Dashboard</a></li>
+    </>
+
     return (
         <div className="navbar bg-violet-500 text-white shadow-sm">
             <div className="navbar-start">
@@ -21,18 +28,14 @@ const Header = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
-                        <li><a>Home</a></li>
-                        <li><a>Statistics</a></li>
-                        <li><a>Dashboard</a></li>
+                        {links}
                     </ul>
                 </div>
                 <a className="btn btn-ghost text-xl">Gadget Heaven</a>
             </div>
             <div className="navbar-center hidden md:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>Statistics</a></li>
-                    <li><a>Dashboard</a></li>
+                    {links}
                 </ul>
             </div>
             <div className="navbar-end">
