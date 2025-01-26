@@ -34,7 +34,8 @@ const DashBoard = () => {
                 <Cart product={cart}></Cart>
             }
             {
-                wishlist.map( product => <Wishlist key={product.product_id} product={product}></Wishlist>)
+                // wishlist.map( product => <Wishlist key={product.product_id} product={product}></Wishlist>)
+                <Wishlist wishlist={wishlist}></Wishlist>
             }
         </div>
     );

@@ -1,12 +1,13 @@
-import CartCard from "./CartCard";
+
 import PropTypes from 'prop-types';
+import CartCard from '../CartCard/CartCard';
 
 const Cart = ({ product }) => {
     return (
         <div className="max-w-7xl mx-auto">
-            <div className="flex justify-between items-center p-5">
-                <h1>Cart</h1>
-                <div className="flex gap-3 items-center">
+            <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 justify-between items-center p-5">
+                <h1 className='text-xl font-semibold md:text-base'>Cart</h1>
+                <div className="flex flex-col md:flex-row gap-3 items-center">
                     <h1>Total Cost: </h1>
                     <button className="btn btn-primary rounded-3xl px-10">Sort by Price</button>
                     <button className="btn btn-primary rounded-3xl px-10">Purchase</button>
@@ -16,6 +17,7 @@ const Cart = ({ product }) => {
                 {
                     product.map(product => <CartCard key={product.product_id} product={product}></CartCard>)
                 }
+
             </div>
         </div>
     );

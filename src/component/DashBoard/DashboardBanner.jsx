@@ -1,9 +1,9 @@
 
 const DashboardBanner = () => {
     return (
-        <div className="text-center text-white bg-violet-500 pt-10 py-10">
-            <h1>Dashboard</h1>
-            <p>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+        <div className="text-center text-white bg-violet-500 pt-10 py-10 space-y-5">
+            <h1 className="text-xl md:text-2xl font-bold">Dashboard</h1>
+            <p className="text-sm md:text-xs lg:text-lg w-2/3 mx-auto text-gray-100">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
 
             <div className="flex justify-center space-x-5 mt-5">
                 <button className="btn btn-primary text-white rounded-3xl px-10">Cart</button>
