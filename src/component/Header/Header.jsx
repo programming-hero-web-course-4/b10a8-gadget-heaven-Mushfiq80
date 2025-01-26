@@ -1,11 +1,28 @@
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
 
-    const links = <>
-        <li><a>Home</a></li>
-        <li><a>Statistics</a></li>
-        <li><a>Dashboard</a></li>
-    </>
+    const links = (
+        <>
+            <li>
+                <NavLink to="/" className={({ isActive }) => "nav-link " + (isActive ? "bg-black text-white" : "")}>
+                    Home
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/stats" className={({ isActive }) => "nav-link " + (isActive ? "bg-black text-white" : "")}>
+                    Statistics
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/dashboard" className={({ isActive }) => "nav-link " + (isActive ? "bg-black text-white" : "")}>
+                    Dashboard
+                </NavLink>
+            </li>
+        </>
+    );
+    {/* <li><NavLink to="/stats">Statistics</NavLink></li>
+        <li><NavLink to="/dashboard">Dashboard</NavLink></li> */}
 
     return (
         <div className="navbar bg-violet-500 text-white shadow-sm">

@@ -30,7 +30,8 @@ const DashBoard = () => {
             <DashboardBanner></DashboardBanner>
             
             {
-                cart.map( product => <Cart key={product.product_id} product={product}></Cart>)
+                // cart.map( product => <Cart key={product.product_id} product={product}></Cart>)
+                <Cart product={cart}></Cart>
             }
             {
                 wishlist.map( product => <Wishlist key={product.product_id} product={product}></Wishlist>)
