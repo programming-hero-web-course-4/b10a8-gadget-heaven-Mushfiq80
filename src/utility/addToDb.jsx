@@ -23,7 +23,7 @@ const addToStoredReadList = (id) => {
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem('read-list', storedListStr);
         // ideally trigger toast from the component
-        toast('This book is added to your read list.')
+        toast('This Product is added to Cart.')
     }
 }
 

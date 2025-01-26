@@ -42,7 +42,7 @@ const DashBoard = () => {
             <DashboardBanner handleDisplay={handleDisplay}></DashboardBanner>
             
             {
-                display.Status === 'cart' && <Cart product={cart}></Cart>
+                display.Status === 'cart' && <Cart product={cart} setCart={setCart}></Cart>
                 // cart.map( product => <Cart key={product.product_id} product={product}></Cart>)
             }
             {
