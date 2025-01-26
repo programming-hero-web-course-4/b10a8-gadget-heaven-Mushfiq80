@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import { BsCart4 } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
+import { addToStoredReadList, addToStoredWishList } from "../../utility/addToDb";
 
 
 const ProductDetails = () => {
@@ -14,7 +15,7 @@ const ProductDetails = () => {
     const product = data.find(product => product.product_id === id);
     console.log(product);
 
-    const { product_title, price, product_image, description, specification, rating } = product;
+    const { product_id, product_title, price, product_image, description, specification, rating } = product;
 
 
     const inStock = <>
@@ -23,6 +24,13 @@ const ProductDetails = () => {
     const outOfStock = <>
         <div className="badge badge-error">Out of Stock</div></>
 
+    const handleAddCart = (id) => {
+        addToStoredReadList(id);
+    }
+    const handleWishList = (id) => {
+        addToStoredWishList(id);
+    }
+
     return (
         <div className="bg-base-200 pb-10">
             <div className="text-center text-white bg-violet-500 pt-10 h-[375px]">
@@ -30,8 +38,8 @@ const ProductDetails = () => {
                 <p className="text-sm md:text-xs w-1/2 mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
             {/* PRoduct Details card  */}
-            <div className="flex justify-evenly lg:card-side bg-base-100 rounded-2xl shadow-sm -mt-28 md:w-3/4 mx-auto p-4">
-                <div>
+            <div className="flex flex-col justify-evenly lg:card-side bg-base-100 rounded-2xl shadow-sm -mt-28 md:w-3/4 mx-auto p-4">
+                <div className="flex justify-center">
                     <img className="rounded-lg w-[425px] h-[505px] object-contain"
                         src={product_image} />
                 </div>
@@ -72,8 +80,8 @@ const ProductDetails = () => {
                         <p className="">{rating}</p>
                     </div>
                     <div className="card-actions flex gap-5 items-center">
-                        <button className="btn btn-primary rounded-2xl" disabled={!product.available}>Add to Cart <BsCart4 className="text-xl"/></button>
-                        <button className="text-3xl rounded-full outline p-1 btn"><CiHeart /></button>
+                        <button onClick={() => handleAddCart(product_id)} className="btn btn-primary rounded-2xl" disabled={!product.available}>Add to Cart <BsCart4 className="text-xl"/></button>
+                        <button onClick={()=>handleWishList(product_id)} className="text-3xl rounded-full outline p-1 btn"><CiHeart /></button>
                     </div>
                 </div>
             </div>
