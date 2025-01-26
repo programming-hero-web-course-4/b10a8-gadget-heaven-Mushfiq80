@@ -24,18 +24,30 @@ const DashBoard = () => {
         setWishlist(wishlistProducts);
     },[allProducts])
 
+    // Display Rendering between cart and wishlist 
+    const [display, setDisplay] = useState({
+        Render: true,
+        Status: 'cart'
+    });
+    const handleDisplay = (Status) => {
+        if (Status === 'cart') {
+            setDisplay({ Render: true, Status: 'cart' });
+        } else {
+            setDisplay({ Render: false, Status: 'wishlist' });
+        }
+    }
 
     return (
         <div>
-            <DashboardBanner></DashboardBanner>
+            <DashboardBanner handleDisplay={handleDisplay}></DashboardBanner>
             
             {
+                display.Status === 'cart' && <Cart product={cart}></Cart>
                 // cart.map( product => <Cart key={product.product_id} product={product}></Cart>)
-                <Cart product={cart}></Cart>
             }
             {
+                display.Status === 'wishlist' && <Wishlist wishlist={wishlist}></Wishlist>
                 // wishlist.map( product => <Wishlist key={product.product_id} product={product}></Wishlist>)
-                <Wishlist wishlist={wishlist}></Wishlist>
             }
         </div>
     );
