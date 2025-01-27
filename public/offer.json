@@ -1,0 +1,98 @@
+[
+    {
+      "offer_id": "OFF001",
+      "offer_title": "MacBook Pro M2 - New Year Special",
+      "starting_date": "2025-01-01",
+      "end_date": "2025-01-31",
+      "description": "Save $300 on the MacBook Pro M2! Perfect for professionals looking for unmatched performance.",
+      "redeem_code": "MACNEWYEAR2025",
+      "delivery_condition": "Free delivery within 3-5 business days.",
+      "available_count": 50,
+      "image": "https://example.com/images/macbook-pro-deal.jpg",
+      "discount_percentage": 15,
+      "original_price": 2499,
+      "offer_price": 2199,
+      "terms": [
+        "Offer valid while stock lasts.",
+        "Cannot be combined with other promotions.",
+        "Valid only on online purchases."
+      ]
+    },
+    {
+      "offer_id": "OFF002",
+      "offer_title": "iPhone 14 Pro - Valentine's Exclusive",
+      "starting_date": "2025-02-01",
+      "end_date": "2025-02-14",
+      "description": "Gift your loved one the latest iPhone! Enjoy free accessories worth $100.",
+      "redeem_code": "LOVEIPHONE2025",
+      "delivery_condition": "Free same-day delivery for orders placed before 12 PM.",
+      "available_count": 100,
+      "image": "https://example.com/images/iphone14-pro-deal.jpg",
+      "discount_percentage": 10,
+      "original_price": 1099,
+      "offer_price": 989,
+      "terms": [
+        "Limited to one purchase per customer.",
+        "Accessories include a silicone case and a fast charger.",
+        "Returns allowed within 7 days."
+      ]
+    },
+    {
+      "offer_id": "OFF003",
+      "offer_title": "Samsung Galaxy Watch 5 - Fitness Bundle",
+      "starting_date": "2025-03-01",
+      "end_date": "2025-03-15",
+      "description": "Get the Galaxy Watch 5 with a free fitness band and 20% off the next purchase!",
+      "redeem_code": "FITGALAXY2025",
+      "delivery_condition": "Free shipping across the country.",
+      "available_count": 70,
+      "image": "https://example.com/images/galaxy-watch-deal.jpg",
+      "discount_percentage": 25,
+      "original_price": 329,
+      "offer_price": 249,
+      "terms": [
+        "Fitness band included for free with every purchase.",
+        "20% discount valid on next purchase within 30 days.",
+        "Limited stock available."
+      ]
+    },
+    {
+      "offer_id": "OFF004",
+      "offer_title": "Logitech Accessories Mega Deal",
+      "starting_date": "2025-04-01",
+      "end_date": "2025-04-30",
+      "description": "Get 2 Logitech accessories and save 30%! Ideal for professionals and gamers.",
+      "redeem_code": "LOGITECHMEGA2025",
+      "delivery_condition": "Delivery charges apply for orders under $50.",
+      "available_count": 200,
+      "image": "https://example.com/images/logitech-deal.jpg",
+      "discount_percentage": 30,
+      "bundle_offer": true,
+      "terms": [
+        "Minimum purchase of 2 accessories required.",
+        "Bundle includes mouse, keyboard, or headphones.",
+        "Valid for online and in-store purchases."
+      ]
+    },
+    {
+      "offer_id": "OFF005",
+      "offer_title": "Google Pixel 7 Pro Launch Offer",
+      "starting_date": "2025-05-01",
+      "end_date": "2025-05-15",
+      "description": "Be among the first to grab the Pixel 7 Pro with 20% off and free Google Nest Mini.",
+      "redeem_code": "PIXELDEAL2025",
+      "delivery_condition": "Free express delivery available.",
+      "available_count": 150,
+      "image": "https://example.com/images/pixel7pro-deal.jpg",
+      "discount_percentage": 20,
+      "original_price": 899,
+      "offer_price": 719,
+      "bonus_item": "Google Nest Mini",
+      "terms": [
+        "Offer valid until May 15th or while stocks last.",
+        "Free Google Nest Mini included with each purchase.",
+        "Not eligible for returns or exchanges."
+      ]
+    }
+  ]
+  

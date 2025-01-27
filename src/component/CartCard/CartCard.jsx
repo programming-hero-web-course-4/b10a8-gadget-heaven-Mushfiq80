@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 
+
 const CartCard = ({ product }) => {
     const { product_title, description, price, product_image  } = product;
+    
+
     return (
         <div className="flex gap-10 p-5 bg-base-300 shadow-2xl items-center">
             <div>

@@ -2,8 +2,10 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import { BsCart4 } from "react-icons/bs";
-import { CiHeart } from "react-icons/ci";
-import { addToStoredReadList, addToStoredWishList } from "../../utility/addToDb";
+import { FaHeart } from "react-icons/fa6";
+import { addToStoredReadList, addToStoredWishList, getStoredWishList, removeFromStoredWishList } from "../../utility/addToDb";
+import { useContext, useEffect, useState } from "react";
+import { TotalCost } from "../../layout/Root";
 
 
 const ProductDetails = () => {
@@ -13,23 +15,48 @@ const ProductDetails = () => {
     const data = useLoaderData();
 
     const product = data.find(product => product.product_id === id);
-    console.log(product);
+    // console.log(product);
 
     const { product_id, product_title, price, product_image, description, specification, rating } = product;
 
+    const [isWished, setIsWished] = useState(false);
 
+    useEffect( ()=>{
+        const storedWishlist = getStoredWishList();
+        if (storedWishlist.includes(product_id)) {
+            setIsWished(true);
+        } else {
+            setIsWished(false);
+        }
+    },[product_id])
+
+    const handleWishListToggle = (id) => {
+        const storedWishlist = getStoredWishList();
+
+        if (storedWishlist.includes(id)) {
+            removeFromStoredWishList(id);
+            setIsWished(false);
+        } else {
+            addToStoredWishList(id);
+            setIsWished(true);
+        }
+    };
     const inStock = <>
         <div className="badge badge-success">In Stock</div>
     </>
     const outOfStock = <>
         <div className="badge badge-error">Out of Stock</div></>
 
+    const [Cost, setCost] = useContext(TotalCost);
+
     const handleAddCart = (id) => {
         addToStoredReadList(id);
+        setCost(Cost + price);
+
     }
-    const handleWishList = (id) => {
-        addToStoredWishList(id);
-    }
+    // const handleWishList = (id) => {
+    //     addToStoredWishList(id);
+    // }
 
     return (
         <div className="bg-base-200 pb-10">
@@ -80,8 +107,12 @@ const ProductDetails = () => {
                         <p className="">{rating}</p>
                     </div>
                     <div className="card-actions flex gap-5 items-center">
-                        <button onClick={() => handleAddCart(product_id)} className="btn btn-primary rounded-2xl" disabled={!product.available}>Add to Cart <BsCart4 className="text-xl"/></button>
-                        <button onClick={()=>handleWishList(product_id)} className="text-3xl rounded-full outline p-1 btn"><CiHeart /></button>
+                        <button onClick={() => handleAddCart(product_id)} className="btn btn-primary rounded-2xl" disabled={!product.available}>Add to Cart <BsCart4 className="text-xl" /></button>
+                        <button
+                            onClick={() => handleWishListToggle(product_id)}
+                            className={`text-3xl rounded-full outline p-1 btn `}>
+                            <FaHeart  className={`${isWished ? "text-red-500" : "text-gray-300"}`} />
+                        </button>
                     </div>
                 </div>
             </div>
