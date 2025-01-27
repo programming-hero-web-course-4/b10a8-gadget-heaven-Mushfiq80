@@ -1,6 +1,7 @@
 
 import { useLoaderData } from "react-router-dom";
 import OfferCard from "./OfferCard";
+import { Helmet } from "react-helmet";
 
 
 const Exclusive = () => {
@@ -11,6 +12,10 @@ const Exclusive = () => {
     return (
         <div>
             <div className="bg-violet-500 text-white">
+                <Helmet>
+                    <title>Special Offers | Gadget Capital</title>
+                    <meta name="description" content="Exclusive offers on Gadget Capital" />
+                </Helmet>
                 <div className="container  mx-auto px-4 py-8">
                     <h1 className="text-4xl font-bold text-center mb-12">Special Offers</h1>
                 </div>

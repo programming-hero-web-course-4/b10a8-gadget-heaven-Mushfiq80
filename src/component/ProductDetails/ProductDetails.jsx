@@ -7,6 +7,7 @@ import { addToStoredReadList, addToStoredWishList, getStoredWishList, removeFrom
 import { useContext, useEffect, useState } from "react";
 import { TotalCost } from "../../layout/Root";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 
 const ProductDetails = () => {
@@ -63,6 +64,10 @@ const ProductDetails = () => {
 
     return (
         <div className="bg-base-200 pb-10">
+            <Helmet>
+                <title>{product_title} | Gadget Capital</title>
+                <meta name="description" content={`Product Details of ${product_title}`} />
+            </Helmet>
             <div className="text-center text-white bg-violet-500 pt-10 h-[375px]">
                 <h1 className="text-xl md:text-3xl font-semibold">Product Details</h1>
                 <p className="text-sm md:text-xs w-1/2 mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

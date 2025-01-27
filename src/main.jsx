@@ -12,6 +12,7 @@ import DashBoard from './component/DashBoard/DashBoard';
 import { ToastContainer } from 'react-toastify'
 import ErrorPage from './error-page';
 import Exclusive from './component/Exclusive/Exclusive';
+import Stats from './component/Stats/Stats';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
         path: 'exclusive',
         element: <Exclusive></Exclusive>,
         loader: () => fetch('/offer.json')
+      },
+      {
+        path: 'stats',
+        element: <Stats></Stats>,
+        loader: () => fetch('/product.json')
       }
     ]
   },

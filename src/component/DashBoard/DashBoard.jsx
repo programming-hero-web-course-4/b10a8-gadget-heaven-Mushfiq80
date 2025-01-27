@@ -4,6 +4,7 @@ import { getStoredReadList, getStoredWishList } from "../../utility/addToDb";
 import Wishlist from "../WishList/Wishlist";
 import Cart from "../Cart/Cart";
 import DashboardBanner from "./DashboardBanner";
+import { Helmet } from "react-helmet";
 
 
 
@@ -27,11 +28,11 @@ const DashBoard = () => {
         setWishlist(wishlistProducts);
     }, [allProducts])
 
-    const handleSort = () =>{
+    const handleSort = () => {
         const cartList = getStoredReadList();
         const storedCart = allProducts.filter(product => cartList.includes(product.product_id))
         // console.log(storedCart);
-        const sortCart = storedCart.sort((a,b) => b.price - a.price);
+        const sortCart = storedCart.sort((a, b) => b.price - a.price);
         console.log(sortCart);
         setCart(sortCart);
         // console.log(allProducts.map(product => console.log(product.price)));
@@ -52,7 +53,11 @@ const DashBoard = () => {
 
     return (
         <div>
-            <DashboardBanner handleDisplay={handleDisplay}></DashboardBanner>
+            <Helmet>
+                <title>Dashboard | Gadget Capital</title>
+                <meta name="description" content="Gadget Capital Dashboard" />
+            </Helmet>
+            <DashboardBanner handleDisplay={handleDisplay} display={display.Status}></DashboardBanner>
 
 
             {

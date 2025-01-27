@@ -1,4 +1,6 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { FaHeart } from "react-icons/fa6";
+import { IoMdCart } from "react-icons/io";
 
 const Header = () => {
     const location = useLocation();
@@ -62,8 +64,9 @@ const Header = () => {
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Button</a>
+            <div className="navbar-end flex gap-4">
+                <Link to='/dashboard' className="btn rounded-full"><IoMdCart className="text-xl" /></Link>
+                <Link to='/dashboard' className="btn rounded-full"><FaHeart  className="text-xl"/></Link>
             </div>
         </div>
     );
