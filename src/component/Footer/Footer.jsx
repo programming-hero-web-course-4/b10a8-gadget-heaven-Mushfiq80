@@ -4,10 +4,9 @@ const Footer = () => {
 
         <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
             <aside>
+                <h1 className="text-3xl font-semibold">Gadget Capital</h1>
                 <p>
-                    ACME Industries Ltd.
-                    <br />
-                    Providing reliable tech since 1992
+                    We provide the latest and greatest <br />in tech products to enhance your <br />digital lifestyle. 
                 </p>
             </aside>
             <nav>

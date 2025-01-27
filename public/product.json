@@ -81,8 +81,8 @@
         "16.2-inch Liquid Retina XDR Display",
         "macOS Ventura"
       ],
-      "available": true,
-      "rating": 4.9
+      "available": false,
+      "rating": 4.3
     },
     {
       "product_id": "LAP005",
@@ -132,7 +132,7 @@
         "iOS 16"
       ],
       "available": true,
-      "rating": 3.9
+      "rating": 4.8
     },
     {
       "product_id": "PH002",
@@ -181,7 +181,7 @@
         "iOS 16"
       ],
       "available": true,
-      "rating": 4.7
+      "rating": 3.9
     },
     {
       "product_id": "ACC001",
