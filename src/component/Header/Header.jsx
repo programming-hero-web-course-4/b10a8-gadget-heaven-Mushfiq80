@@ -1,6 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
+    const location = useLocation();
+
+    // Check if the current location is "/"
+    const isHomePage = location.pathname === "/";
 
     const links = (
         <>
@@ -19,13 +23,16 @@ const Header = () => {
                     Dashboard
                 </NavLink>
             </li>
+            <li>
+                <NavLink to="/exclusive" className={({ isActive }) => "nav-link " + (isActive ? "bg-black text-white" : "")}>
+                    Exclusive
+                </NavLink>
+            </li>
         </>
     );
-    {/* <li><NavLink to="/stats">Statistics</NavLink></li>
-        <li><NavLink to="/dashboard">Dashboard</NavLink></li> */}
 
     return (
-        <div className="navbar bg-violet-500 text-white shadow-sm">
+        <div className={`navbar shadow-sm ${isHomePage ? "bg-violet-500 text-white" : "bg-white text-black"}`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
