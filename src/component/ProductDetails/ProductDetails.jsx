@@ -6,6 +6,7 @@ import { FaHeart } from "react-icons/fa6";
 import { addToStoredReadList, addToStoredWishList, getStoredWishList, removeFromStoredWishList } from "../../utility/addToDb";
 import { useContext, useEffect, useState } from "react";
 import { TotalCost } from "../../layout/Root";
+import { toast } from "react-toastify";
 
 
 const ProductDetails = () => {
@@ -36,9 +37,11 @@ const ProductDetails = () => {
         if (storedWishlist.includes(id)) {
             removeFromStoredWishList(id);
             setIsWished(false);
+            toast.error("Removed from Wishlist");
         } else {
             addToStoredWishList(id);
             setIsWished(true);
+            toast.success("Added to Wishlist");
         }
     };
     const inStock = <>
