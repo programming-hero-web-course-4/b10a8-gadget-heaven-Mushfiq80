@@ -1,16 +1,14 @@
-# GadgetHeaven ✨
+# Gadget Capital ✨
 Your go-to destination for the latest and greatest gadgets!
 
 ## Live Website
-[Click here to view the live site](#) (Replace with the actual deployed URL).
+[Click here to view the live site](https://gadget-capital-28281m.netlify.app/) (Replace with the actual deployed URL).
 
-## Requirement Document
-[Click here to view the project requirements](#) (Replace with the actual document URL).
 
 ---
 
 ## Project Overview
-GadgetHeaven is a feature-rich e-commerce platform designed for gadget enthusiasts. The website offers a seamless shopping experience with essential functionalities such as product categorization, shopping cart, wishlist, and product filtering. Built with modern web development technologies, the platform ensures a smooth and engaging user experience.
+gadgetCapital is a feature-rich e-commerce platform designed for gadget enthusiasts. The website offers a seamless shopping experience with essential functionalities such as product categorization, shopping cart, wishlist, and product filtering. Built with modern web development technologies, the platform ensures a smooth and engaging user experience.
 
 ---
 
@@ -96,7 +94,7 @@ GadgetHeaven is a feature-rich e-commerce platform designed for gadget enthusias
    ```
 2. Navigate to the project directory:
    ```bash
-   cd gadgetheaven
+   cd gadgetCapital
    ```
 3. Install dependencies:
    ```bash
