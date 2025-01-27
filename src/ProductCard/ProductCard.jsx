@@ -9,7 +9,7 @@ const ProductCard = ({ gadget }) => {
             <figure className="px-5 pt-5">
                 <img
                     src={product_image}
-                    className="rounded-x w-64 h-44 " />
+                    className="rounded-x w-64 h-52 " />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{product_title}</h2>

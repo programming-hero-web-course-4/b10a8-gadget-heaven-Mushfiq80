@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     return (
@@ -7,7 +8,7 @@ const Hero = () => {
 
             <p className="text-sm w-3/4 mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
 
-            <button className="btn">Shop Now</button>
+            <Link to="/dashboard" className="btn">Shop Now</Link>
         </div>
     );
 };
